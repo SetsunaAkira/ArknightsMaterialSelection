@@ -35,12 +35,19 @@ namespace ArknightsMaterialSelection
                         Console.WriteLine("View Operator");
                         break;
 
-                     case"3":
+                     case "3":
                         Console.WriteLine("Bulk Material Search");
                         break;
-
-
-
+                    case "4":
+                        Console.WriteLine("Shared Materials");
+                        break;
+                    case "0":
+                        {
+                            Console.WriteLine("Exiting");
+                            Console.ReadLine();
+                            CloseOperation = true;
+                            break;
+                        }
                 }
             }
         }

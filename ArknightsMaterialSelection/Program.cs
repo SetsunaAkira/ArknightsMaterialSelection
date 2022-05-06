@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using ArknightsMaterialSelection;
+
+Materials Mat = new Materials();
+//BeginOperation BasicUI = new BeginOperation();
+//BasicUI.Start();
+Mat.DistributeMaterials();

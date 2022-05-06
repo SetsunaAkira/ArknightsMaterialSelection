@@ -10,6 +10,10 @@ namespace ArknightsMaterialSelection
     {
         public string? MaterialName { get; set; }
 
+        public int? MaterialTier { get; set; }
 
+        public List<string>? DropLocations { get; set; }
+
+        public Dictionary<int, string>? MaterialToUpgradeTo { get; set; }
     }
 }
