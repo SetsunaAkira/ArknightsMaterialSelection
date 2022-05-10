@@ -8,5 +8,7 @@ namespace ArknightsMaterialSelection
 {
     internal class OperatorObject
     {
+        string? OperatorName { get; set; }
+        string? OperatorFaction { get; set; }
     }
 }
