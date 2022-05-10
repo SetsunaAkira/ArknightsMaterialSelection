@@ -11,6 +11,6 @@ namespace ArknightsMaterialSelection
     {
         string? OperatorName { get; set; }
         string? OperatorFaction { get; set; }
-        List<SkillObject> Skills { get; set; }
+        List<SkillObject>? Skills { get; set; }
     }
 }
