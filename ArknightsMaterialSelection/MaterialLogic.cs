@@ -57,10 +57,12 @@ namespace ArknightsMaterialSelection
                         }
                     case "Insensitive":
                         {
+                            CaseInsensitive(input, materials);
                             break;
                         }
                     case "GeneralFilter":
                         {
+                            GeneralFilter(input, materials);
                             break;
                         }
 
@@ -85,6 +87,16 @@ namespace ArknightsMaterialSelection
                     }
                 }
             }
+        }
+
+        public void CaseInsensitive(string input, List<MaterialObject> materials)
+        {
+
+        }
+
+        public void GeneralFilter(string input, List<MaterialObject> materials)
+        {
+
         }
     }
  }
