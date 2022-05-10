@@ -11,8 +11,12 @@ namespace ArknightsMaterialSelection
         public bool CloseOperation = false;
         public Dictionary<int, string> UserOptions = new Dictionary<int, string>();
         public string? UserInput = "";
+        private readonly MaterialLogic Controller = new MaterialLogic();
+        private readonly MaterialDataPull Scrubber = new MaterialDataPull();
+        private List<MaterialObject> MaterialObjects = new List<MaterialObject>();  
         public void Start()
         {
+            MaterialObjects = Scrubber.InitializeMaterials();
             addUserOptions(UserOptions);
             while(CloseOperation == false)
             {
@@ -29,17 +33,22 @@ namespace ArknightsMaterialSelection
                 {
                     case "1":
                         Console.WriteLine("View Material");
+                        Console.Clear();
+                        Controller.ViewMaterial(MaterialObjects);
                         break;
 
                      case "2":
                         Console.WriteLine("View Operator");
+                        Console.Clear();
                         break;
 
                      case "3":
                         Console.WriteLine("Bulk Material Search");
+                        Console.Clear();
                         break;
                     case "4":
                         Console.WriteLine("Shared Materials");
+                        Console.Clear();
                         break;
                     case "0":
                         {
